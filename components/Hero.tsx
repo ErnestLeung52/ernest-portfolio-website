@@ -4,6 +4,7 @@ import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
+import SmoothScrollLink from './SmoothScroll';
 
 type Props = {};
 
@@ -32,18 +33,21 @@ const Hero = (props: Props) => {
 				</h1>
 
 				<div className='pt-5'>
-					<Link href='#about'>
+					<SmoothScrollLink to='#about'>
 						<button className='heroButton'>About</button>
-					</Link>
-					<Link href='#experience'>
+					</SmoothScrollLink>
+
+					<SmoothScrollLink to='#experience'>
 						<button className='heroButton'>Experience</button>
-					</Link>
-					<Link href='#skills'>
+					</SmoothScrollLink>
+
+					<SmoothScrollLink to='#skills'>
 						<button className='heroButton'>Skills</button>
-					</Link>
-					<Link href='#projects'>
+					</SmoothScrollLink>
+
+					<SmoothScrollLink to='#projects'>
 						<button className='heroButton'>Projects</button>
-					</Link>
+					</SmoothScrollLink>
 				</div>
 			</div>
 		</div>
