@@ -1,3 +1,5 @@
+'use client';
+
 import React, { FC, MouseEvent } from 'react';
 
 interface SmoothScrollLinkProps {
