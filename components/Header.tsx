@@ -3,6 +3,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import ThemeToggleButton from './ThemeToggleButton';
 
 type Props = {};
 
@@ -20,6 +21,8 @@ export default function Header({}: Props) {
 				<SocialIcon url='https://github.com/ErnestLeung52' fgColor='gray' bgColor='transparent' />
 				<SocialIcon url='https://github.com/ErnestLeung52' fgColor='gray' bgColor='transparent' />
 			</motion.div>
+
+			<ThemeToggleButton />
 
 			<motion.div
 				initial={{ x: 500, opacity: 0, scale: 0.5 }}

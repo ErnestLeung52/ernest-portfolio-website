@@ -8,10 +8,14 @@ import SmoothScrollLink from '@/components/SmoothScroll';
 import WorkExperience from '@/components/WorkExperience';
 import Image from 'next/image';
 
+export const metadata = {
+	title: "Ernest' Portfolio",
+};
+
 export default function Home() {
 	return (
 		// z-0 base layer
-		<div className=' bg-slate-800 text-slate-100 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
+		<div className=' dark:bg-slate-800 bg-slate-200 text-slate-100 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
 			{/* Header */}
 			<Header />
 
