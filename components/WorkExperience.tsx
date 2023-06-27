@@ -20,7 +20,7 @@ const WorkExperience = (props: Props) => {
 		>
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Experience</h3>
 
-			<div className='mt-10 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
+			<div className='mt-10 w-full mr-12 flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-emerald-400/50'>
 				{experienceData.map((experience, i) => (
 					<ExperienceCard key={i} experience={experience} />
 				))}
