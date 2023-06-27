@@ -15,7 +15,7 @@ export const metadata = {
 export default function Home() {
 	return (
 		// z-0 base layer
-		<div className='bg-slate-800 text-slate-200 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
+		<div className='bg-slate-800 text-slate-200 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-emerald-400/50'>
 			{/* Header */}
 			<Header />
 
