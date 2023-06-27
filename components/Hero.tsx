@@ -25,11 +25,11 @@ const Hero = (props: Props) => {
 				alt='profile-pic'
 			/>
 
-			<div className='z-20'>
-				<h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
+			<div className='z-20 w-screen'>
+				<h2 className='text-md uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
 				<h1 className='text-5xl lg:text-6xl font-semibold px-10'>
 					<span className='mr-3'>{text}</span>
-					<Cursor cursorColor='#F7AB0A' />
+					<Cursor cursorColor='#10b981' />
 				</h1>
 
 				<div className='pt-5'>

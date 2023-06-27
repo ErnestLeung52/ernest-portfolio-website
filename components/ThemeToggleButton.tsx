@@ -12,7 +12,7 @@ const ThemeToggleButton = (props: Props) => {
 	const changeThemeHandler = () => (theme == 'dark' ? setTheme('light') : setTheme('dark'));
 
 	return (
-		<div className='w-8 h-8 text-slate-800 dark:text-slate-500 cursor-pointer'>
+		<div className='w-6 h-6 text-slate-[#e5e7eb] dark:text-[#e5e7eb] cursor-pointer'>
 			{theme === 'dark' ? <SunIcon onClick={changeThemeHandler} /> : <MoonIcon onClick={changeThemeHandler} />}
 		</div>
 	);
