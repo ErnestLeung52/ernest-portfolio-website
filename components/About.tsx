@@ -26,13 +26,13 @@ const About = (props: Props) => {
 				}}
 				transition={{ duration: 1.2 }}
 				viewport={{ once: true }}
-				className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+				className='-mb-20 md:mb-0 flex shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
 				src='profile-pic.jpg'
 			/>
 
 			<div className='space-y-10 px-0 md:px-10'>
 				<h4 className='text-4xl font-semibold'>
-					Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background
+					Here is a <span className='underline decoration-emerald-500/50'>little</span> background
 				</h4>
 				<p className='text-base'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
