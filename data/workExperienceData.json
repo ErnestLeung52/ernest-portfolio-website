@@ -1,0 +1,24 @@
+[
+	{
+		"company": "EStack Studio",
+		"logo": "",
+		"role": "Full Stack Software Engineer",
+		"date": "Nov 2022 – Present",
+		"bulletPoints": [
+			" Implemented custom Puppeteer scripts to automate intricate form submissions, slashing submission time by 80% from 4 minutes to just 48 seconds, improving data accuracy by 95%, and accelerating project completion time by 90%",
+			"Refined security protocols by modifying the browser's user-agent and fingerprinting data, ensuring a 100% success rate in task automation while upholding professional and ethical standards and driving continual improvements in efficiency",
+			"Streamlined the high-volume email data parsing process by developing an automated system with Google APIs and Node.js, shortening data processing time by 50% and diminishing manual data entry tasks by 70%"
+		]
+	},
+	{
+		"company": "OS Labs",
+		"logo": "",
+		"role": "Full Stack Software Engineer",
+		"date": "Jan 2022 – Nov 2022",
+		"bulletPoints": [
+			"Engineered a robust cross-platform desktop application using Electron, expanding the user base through broad OS compatibility and incorporating stringent security measures that significantly mitigated potential exploitations by 60%",
+			"Initiated 10+ user-facing features in React, utilizing the container pattern and creating reusable components to maintain and standardize the codebase through abstractions and the Flux architecture, achieving maximum efficiency",
+			"Integrated WebSocket technology to establish a full-duplex connection, facilitating network traffic by 20% and enabling seamless and real-time updates of contract logs between the test API server and client"
+		]
+	}
+]
