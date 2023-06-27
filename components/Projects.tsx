@@ -1,12 +1,21 @@
 'use client';
 
 import React from 'react';
+import { Fragment } from 'react';
 import { motion } from 'framer-motion';
+import { Tab } from '@headlessui/react';
+import rawProjectsData from '../data/projectsData.json';
+import { ITypeProject } from '@/types/interface';
 
 type Props = {};
 
 const Projects = (props: Props) => {
-	const projects = [1, 2, 3, 4, 5];
+	const projectsData: ITypeProject[] = rawProjectsData;
+
+	function classNames(...classes: (string | boolean | undefined)[]): string {
+		return classes.filter(Boolean).join(' ');
+	}
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -16,43 +25,68 @@ const Projects = (props: Props) => {
 		>
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Projects</h3>
 
-			<div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
-				{projects.map((project, i) => (
-					<div
-						key={i}
-						className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'
-					>
-						<motion.img
-							initial={{ y: -300, opacity: 0 }}
-							transition={{ duration: 1.2 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							className='w-48 h-48'
-							src='https://theforage.wpengine.com/wp-content/uploads/2022/12/how-many-work-hours-in-a-year.jpg'
-							alt=''
-						/>
+			<div className=''>
+				<section aria-labelledby='features-heading' className='mx-auto max-w-7xl py-32 sm:px-2 lg:px-8'>
+					<div className='mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0'>
+						<div className='max-w-3xl'></div>
 
-						<div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-							<h4 className='text-4xl font-semibold text-center'>
-								<span className='underline decoration-[#F7AB0A]/50'>Case study ${i + 1}:</span> Project
-								name
-							</h4>
+						<Tab.Group as='div' className='mt-4'>
+							<div className='-mx-4 flex overflow-x-auto sm:mx-0'>
+								<div className='flex-auto border-b border-gray-400 mx-4 sm:px-0'>
+									<Tab.List className='-mb-px flex space-x-10'>
+										{projectsData.map((project) => (
+											<Tab
+												key={project.name}
+												className={({ selected }) =>
+													classNames(
+														selected
+															? 'border-emerald-400 text-emerald-400'
+															: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-300',
+														'whitespace-nowrap border-b-[3px] py-3 text-sm font-medium'
+													)
+												}
+											>
+												{project.name}
+											</Tab>
+										))}
+									</Tab.List>
+								</div>
+							</div>
 
-							<p className='text-lg text-center md:text-left'>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-								has been the industry's standard dummy text ever since the 1500s, when an unknown
-								printer took a galley of type and scrambled it to make a type specimen book. It has
-								survived not only five centuries, but also the leap into electronic typesetting,
-								remaining essentially unchanged. It was popularised in the 1960s with the release of
-								Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-								publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-							</p>
-						</div>
+							<Tab.Panels as={Fragment}>
+								{projectsData.map((project) => (
+									<Tab.Panel key={project.name} className='space-y-16 pt-10 lg:pt-16'>
+										{project.features.map((feature) => (
+											<div
+												key={feature.name}
+												className='flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8'
+											>
+												<div className='mt-6 lg:col-span-5 lg:mt-0'>
+													<h3 className='text-lg font-medium text-gray-400'>
+														{feature.name}
+													</h3>
+													<p className='mt-2 text-sm text-gray-400'>{feature.description}</p>
+												</div>
+												<div className='lg:col-span-7'>
+													<div className='aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5'>
+														<img
+															src={feature.imageSrc}
+															alt={feature.imageAlt}
+															className='object-cover object-center'
+														/>
+													</div>
+												</div>
+											</div>
+										))}
+									</Tab.Panel>
+								))}
+							</Tab.Panels>
+						</Tab.Group>
 					</div>
-				))}
+				</section>
 			</div>
 
-			<div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+			<div className='w-full absolute top-[30%] bg-emerald-700/10 left-0 h-[500px] -skew-y-12' />
 		</motion.div>
 	);
 };
