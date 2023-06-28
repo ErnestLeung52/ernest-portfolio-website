@@ -1,24 +1,55 @@
 [
 	{
 		"company": "EStack Studio",
-		"logo": "",
+		"logoPath": "./companyLogo/estack.png",
 		"role": "Full Stack Software Engineer",
 		"date": "Nov 2022 – Present",
+		"techStacks": [
+			"React",
+			"TypeScript",
+			"Puppeteer",
+			"Tailwind",
+			"NodeJS",
+			"AWSCDK",
+			"AWSS3",
+			"AWSLambda",
+			"GoogleApi"
+		],
 		"bulletPoints": [
-			" Implemented custom Puppeteer scripts to automate intricate form submissions, slashing submission time by 80% from 4 minutes to just 48 seconds, improving data accuracy by 95%, and accelerating project completion time by 90%",
-			"Refined security protocols by modifying the browser's user-agent and fingerprinting data, ensuring a 100% success rate in task automation while upholding professional and ethical standards and driving continual improvements in efficiency",
-			"Streamlined the high-volume email data parsing process by developing an automated system with Google APIs and Node.js, shortening data processing time by 50% and diminishing manual data entry tasks by 70%"
+			"Created a responsive invoice app with React and html2canvas, reducing generation time by 80% and offering extensive customization options.",
+			"Automated form submissions and email data parsing, achieving 80% faster submissions, 95% data accuracy, and halving processing time. Streamlined cloud resource management and deployment with AWS CloudFormation and CDK V2, boosting security and response times by 20% through strategic AWS IAM and API Gateway configurations."
 		]
 	},
 	{
 		"company": "OS Labs",
-		"logo": "",
-		"role": "Full Stack Software Engineer",
+		"logoPath": "./companyLogo/oslabs.jpg",
+		"role": "Software Engineer I",
 		"date": "Jan 2022 – Nov 2022",
+		"techStacks": [
+			"React",
+			"Redux",
+			"TypeScript",
+			"Tailwind",
+			"NodeJS",
+			"Electron",
+			"NextJS",
+			"Sequelize",
+			"PostgreSQL",
+			"MongoDB"
+		],
 		"bulletPoints": [
-			"Engineered a robust cross-platform desktop application using Electron, expanding the user base through broad OS compatibility and incorporating stringent security measures that significantly mitigated potential exploitations by 60%",
-			"Initiated 10+ user-facing features in React, utilizing the container pattern and creating reusable components to maintain and standardize the codebase through abstractions and the Flux architecture, achieving maximum efficiency",
-			"Integrated WebSocket technology to establish a full-duplex connection, facilitating network traffic by 20% and enabling seamless and real-time updates of contract logs between the test API server and client"
+			"Engineered a secure, cross-platform application with Electron and React, enhancing OS compatibility and user-facing features. Integrated WebSocket for improved network traffic and real-time updates. Deployed a fast, user-friendly landing page with AWS Amplify and NextJS.",
+			"Architected a scalable backend for a real-time IoT application. Enhanced database interactions and security, and improved codebase maintainability with a database models abstraction layer. Optimized module fetching and caching with ESbuild plugins, improving loading and transpiling times. Validated functionalities through automated testing."
+		]
+	},
+	{
+		"company": "Stan Group, Gear Financial",
+		"logoPath": "./companyLogo/stanGroup.jpg",
+		"role": "Research Analyst",
+		"date": "Jan 2020 – Jun 2021",
+		"techStacks": ["Excel", "VBAMacros", "PowerBI"],
+		"bulletPoints": [
+			"Automated tasks and boosted efficiency by developing VBA macros, halving processing time, and minimizing data entry errors to 5% through custom Excel functions. Utilized Power BI for interactive tracking of key performance indicators across 500+ properties."
 		]
 	}
 ]
