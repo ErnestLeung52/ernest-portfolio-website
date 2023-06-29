@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import React, { useState } from 'react';
+import { PhoneIcon, MapPinIcon, EnvelopeIcon, ClipboardDocumentCheckIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Props = {};
@@ -15,6 +15,12 @@ type Inputs = {
 
 const ContactMe = (props: Props) => {
 	const { register, handleSubmit } = useForm<Inputs>();
+	const [isCopied, setIsCopied] = useState(false);
+
+	const copyToClipboard = async (text: string) => {
+		await navigator.clipboard.writeText(text);
+		setIsCopied(true);
+	};
 
 	const onSubmit: SubmitHandler<Inputs> = (formData) => {
 		window.location.href = `mailto:ernestleung14@gmail.com?subject=${formData.subject}&body=${formData.message}`;
@@ -25,22 +31,30 @@ const ContactMe = (props: Props) => {
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
 
 			<div className='flex flex-col space-y-10'>
-				<h4 className='text-4xl font-semibold text-center'>Please don't hesitate to reach out</h4>
+				<h4 className='text-2xl md:text-4xl font-semibold text-center'>Please don't hesitate to reach out</h4>
 
-				<div className='space-y-10'>
+				<div className='space-y-7'>
 					<div className='flex items-center space-x-5 justify-center'>
-						<PhoneIcon className='text-[#F7Ab0A] h-7 w-7 animate-pulse' />
-						<p className='text-2xl'>+123456789</p>
+						<EnvelopeIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
+						<p className='text-xl'>ernestleung14@gmail.com</p>
+						<ClipboardDocumentCheckIcon
+							className={
+								isCopied
+									? 'w-5 h-5 cursor-pointer text-emerald-500'
+									: 'w-5 h-5 cursor-pointer text-gray-500 hover:text-emerald-500'
+							}
+							onClick={() => copyToClipboard('ernestleung14@gmail.com')}
+						/>
 					</div>
 
 					<div className='flex items-center space-x-5 justify-center'>
-						<MapPinIcon className='text-[#F7Ab0A] h-7 w-7 animate-pulse' />
-						<p className='text-2xl'>Los Angeles</p>
+						<PhoneIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
+						<p className='text-xl'>+1 (626) 818-3659</p>
 					</div>
 
 					<div className='flex items-center space-x-5 justify-center'>
-						<EnvelopeIcon className='text-[#F7Ab0A] h-7 w-7 animate-pulse' />
-						<p className='text-2xl'>developer@gmail.com</p>
+						<MapPinIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
+						<p className='text-xl'>United States</p>
 					</div>
 
 					<form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
@@ -54,7 +68,7 @@ const ContactMe = (props: Props) => {
 						<textarea {...register('message')} placeholder='Message' className='contactInput' />
 						<button
 							type='submit'
-							className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg'
+							className='bg-emerald-500 py-5 px-10 rounded-md text-white font-bold text-lg'
 						>
 							Submit
 						</button>
