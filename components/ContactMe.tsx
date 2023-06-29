@@ -28,36 +28,38 @@ const ContactMe = (props: Props) => {
 
 	return (
 		<div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
+			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ml-6'>Contact</h3>
 
 			<div className='flex flex-col space-y-10'>
-				<h4 className='text-2xl md:text-4xl font-semibold text-center'>Please don't hesitate to reach out</h4>
+				<h4 className='text-lg sm:text-xl md:text-3xl font-semibold text-center transition-all'>
+					Please don't hesitate to reach out
+				</h4>
 
-				<div className='space-y-7'>
+				<div className='text-md sm:text-lg lg:text-2xl transition-all'>
 					<div className='flex items-center space-x-5 justify-center'>
 						<EnvelopeIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
-						<p className='text-xl'>ernestleung14@gmail.com</p>
+						<p className=''>ernestleung14@gmail.com</p>
 						<ClipboardDocumentCheckIcon
 							className={
 								isCopied
-									? 'w-5 h-5 cursor-pointer text-emerald-500'
-									: 'w-5 h-5 cursor-pointer text-gray-500 hover:text-emerald-500'
+									? 'w-6 h-6 cursor-pointer text-emerald-500'
+									: 'w-6 h-6 cursor-pointer text-gray-500 hover:text-emerald-500'
 							}
 							onClick={() => copyToClipboard('ernestleung14@gmail.com')}
 						/>
 					</div>
 
-					<div className='flex items-center space-x-5 justify-center'>
+					<div className='flex mt-2 items-center space-x-5 justify-center'>
 						<PhoneIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
-						<p className='text-xl'>+1 (626) 818-3659</p>
+						<p className=''>+1 (626) 818-3659</p>
 					</div>
 
-					<div className='flex items-center space-x-5 justify-center'>
+					<div className='flex mt-2 items-center space-x-5 justify-center'>
 						<MapPinIcon className='text-emerald-500 h-7 w-7 animate-pulse' />
-						<p className='text-xl'>United States</p>
+						<p className=''>United States</p>
 					</div>
 
-					<form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
+					<form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 mt-10 w-fit mx-auto'>
 						<div className='flex space-x-2'>
 							<input {...register('name')} placeholder='Name' className='contactInput' type='text' />
 							<input {...register('email')} placeholder='Email' className='contactInput' type='email' />
@@ -68,7 +70,7 @@ const ContactMe = (props: Props) => {
 						<textarea {...register('message')} placeholder='Message' className='contactInput' />
 						<button
 							type='submit'
-							className='bg-emerald-500 py-5 px-10 rounded-md text-white font-bold text-lg'
+							className='bg-emerald-500 py-2 px-4 sm:py-5 sm:px-10 rounded-md text-white font-bold sm:text-lg'
 						>
 							Submit
 						</button>
