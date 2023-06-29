@@ -13,7 +13,7 @@ const ExperienceCard = ({ experience }: Props) => {
 	const { company, date, techStacks, logoPath, role, bulletPoints }: ITypeWorkData = experience;
 
 	return (
-		<article className='flex flex-col rounded-lg space-y-7 flex-shrink-0 w-[420px] md:w-[600px] xl:w-[900px] snap-center bg-slate-500 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+		<article className='flex flex-col rounded-lg space-y-7 flex-shrink-0 w-[420px] md:w-[560px] xl:w-[700px] snap-center bg-slate-500 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
 			<div className='flex flex-row items-center justify-start'>
 				<div>
 					<motion.img
