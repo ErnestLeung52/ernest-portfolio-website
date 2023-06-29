@@ -1,0 +1,85 @@
+{
+	"skills": [
+		{
+			"tech": "JavaScript",
+			"proficiency": "95%",
+			"iconPath": "JavaScript"
+		},
+		{
+			"tech": "TypeScript",
+			"proficiency": "80%",
+			"iconPath": "TypeScript"
+		},
+		{
+			"tech": "React",
+			"proficiency": "90%",
+			"iconPath": "React"
+		},
+		{
+			"tech": "Node.js",
+			"proficiency": "85%",
+			"iconPath": "NodeJS"
+		},
+		{
+			"tech": "Express",
+			"proficiency": "85%",
+			"iconPath": "Express"
+		},
+		{
+			"tech": "PostgreSQL",
+			"proficiency": "70%",
+			"iconPath": "PostgreSQL"
+		},
+		{
+			"tech": "MongoDB",
+			"proficiency": "70%",
+			"iconPath": "MongoDB"
+		},
+		{
+			"tech": "Tailwind",
+			"proficiency": "80%",
+			"iconPath": "Tailwind"
+		},
+
+		{
+			"tech": "Git",
+			"proficiency": "80%",
+			"iconPath": "Git"
+		},
+		{
+			"tech": "HTML",
+			"proficiency": "80%",
+			"iconPath": "HTML"
+		},
+		{
+			"tech": "CSS",
+			"proficiency": "75%",
+			"iconPath": "CSS"
+		},
+		{
+			"tech": "AWS Lambda",
+			"proficiency": "70%",
+			"iconPath": "AWSLambda"
+		},
+		{
+			"tech": "AWS S3",
+			"proficiency": "70%",
+			"iconPath": "AWSS3"
+		},
+		{
+			"tech": "AWS Dynamodb",
+			"proficiency": "70%",
+			"iconPath": "AWSDynamoDB"
+		},
+		{
+			"tech": "Jest",
+			"proficiency": "80%",
+			"iconPath": "Jest"
+		},
+		{
+			"tech": "Puppeteer",
+			"proficiency": "80%",
+			"iconPath": "Puppeteer"
+		}
+	]
+}
