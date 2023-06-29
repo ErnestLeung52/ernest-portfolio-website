@@ -1,45 +1,70 @@
 [
 	{
-		"name": "Design",
+		"name": "Space Finder",
 		"features": [
 			{
-				"name": "Adaptive and modular",
-				"description": "The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.",
-				"imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
-				"imageAlt": "Maple organizer base with slots, supporting white polycarbonate trays of various sizes."
+				"name": "Space Finder",
+				"description": [
+					"Space Finder is a secure online platform for photo storage, organization, and sharing. It simplifies photo management with features like uploading, geotagging, and album curation. Ideal for individuals, families, photographers, and travelers, it combines user-friendliness with robust sharing capabilities for digital memory preservation.",
+					"Additionally, Space Finder offers flexibility in deployment, allowing users to establish their own AWS instance, personalize it with a domain, and create a user pool for enhanced control. It's a go-to solution for reliable, customized digital photo management."
+				],
+				"githubURL": "https://github.com/ErnestLeung52/space-finder-services",
+				"hostURL": "",
+				"techStack": [],
+				"imageSrc": "/projectScreenshot/spaceFinder.png",
+				"imageAlt": "spaceFinder"
 			}
 		]
 	},
 	{
-		"name": "Material",
+		"name": "Contractual",
 		"features": [
 			{
-				"name": "Natural wood options",
-				"description": "Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.",
-				"imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg",
-				"imageAlt": "Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment."
+				"name": "Contractual",
+				"description": [
+					"Contractual is a tool designed to streamline team-based web development for JS and Node.js applications. It focuses on \"Contract Driven Development\", which optimizes efficient interaction between different segments of an application.",
+					"\"Contract\" refers to the data agreement between client and server. With Contractual, teams define these contracts via a user-friendly interface, enabling independent, confident testing by frontend and backend developers for seamless integration and improved productivity."
+				],
+				"githubURL": "https://github.com/ErnestLeung52/contractual",
+				"hostURL": "https://www.contractualapp.io/",
+				"techStack": [],
+				"imageSrc": "/projectScreenshot/contractual.png",
+				"imageAlt": "Contractual"
 			}
 		]
 	},
 	{
-		"name": "Considerations",
+		"name": "Code Station",
 		"features": [
 			{
-				"name": "Helpful around the home",
-				"description": "Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
-				"imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg",
-				"imageAlt": "Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils."
+				"name": "Code Station",
+				"description": [
+					"Code-Station is a compact, efficient browser-based coding platform that allows interactive JavaScript programming, comprehensive markdown documentation, and easy sharing. It provides a dynamic coding environment accessible from anywhere, fostering collaboration and learning.",
+					"The platform boasts user-friendly features, allowing text cell editing and treating code from different cells as a single file for easy referencing. It includes a built-in 'show' function to display various values, and offers the flexibility to reorder, delete, or add cells, catering to a developer's diverse needs."
+				],
+				"githubURL": "https://github.com/ErnestLeung52/Code-station",
+				"hostURL": "",
+				"techStack": [],
+				"imageSrc": "/projectScreenshot/codeStation.png",
+				"imageAlt": "Code Station"
 			}
 		]
 	},
+
 	{
-		"name": "Included",
+		"name": "InvoGen",
 		"features": [
 			{
-				"name": "Everything you'll need",
-				"description": "The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.",
-				"imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg",
-				"imageAlt": "Walnut organizer system on black leather desk mat on top of white desk."
+				"name": "InvoGen",
+				"description": [
+					"Introducing InvoGen, a user-friendly app designed to revolutionize invoicing. With a sleek interface and intuitive features, InvoGen makes generating custom, brand-aligned invoices effortless, using a variety of templates.",
+					"InvoGen enhances user experience by coupling functionality with design. Offering a range of choices for professional, unique invoices, it streamlines business operations, providing an immersive, efficient invoicing solution."
+				],
+				"githubURL": "https://github.com/ErnestLeung52/Onyx-InvoGen",
+				"hostURL": "",
+				"techStack": [],
+				"imageSrc": "/projectScreenshot/InvoGen.png",
+				"imageAlt": "InvoGen"
 			}
 		]
 	}
