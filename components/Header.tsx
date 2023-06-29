@@ -10,7 +10,7 @@ type Props = {};
 
 export default function Header({}: Props) {
 	return (
-		<header className='sticky top-0 p-5 flex justify-between max-w-7xl mx-auto z-20 items-center'>
+		<header className='sticky top-0 p-5 flex justify-between max-w-7xl mx-auto z-40 items-center'>
 			<motion.div
 				initial={{ x: -500, opacity: 0, scale: 0.5 }}
 				animate={{ x: 0, opacity: 1, scale: 1 }}

@@ -37,7 +37,7 @@ const About = (props: Props) => {
 				src='profile-pic.jpg'
 			/>
 
-			<div className='flex flex-col items-center space-y-10 px-0 md:px-10'>
+			<div className='flex flex-col items-start space-y-10 px-0 md:px-10'>
 				<h4 className='text-4xl font-semibold'>
 					Here is a <span className='underline decoration-emerald-500/50'>little</span> background
 				</h4>
