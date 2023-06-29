@@ -26,8 +26,8 @@ const Hero = (props: Props) => {
 			/>
 
 			<div className='z-20 w-screen'>
-				<h2 className='text-md uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
-				<h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+				<h2 className='text-sm sm:text-md uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
+				<h1 className='text-3xl sm:text-4xl lg:text-6xl font-semibold px-10 mt-2'>
 					<span className='mr-3'>{text}</span>
 					<Cursor cursorColor='#10b981' />
 				</h1>
