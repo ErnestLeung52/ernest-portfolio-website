@@ -10,7 +10,7 @@ import { ArrowUpCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 
 export const metadata = {
-	title: "Ernest' Portfolio",
+	title: "Ernest's Portfolio",
 };
 
 export default function Home() {
