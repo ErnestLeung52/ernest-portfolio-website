@@ -2,7 +2,9 @@
 
 ## Introduction
 
-![My Project Screenshot](/public/homeScreenshot.png)
+<img src="https://i.gyazo.com/9cc78c2c924dc0b4b10d5d51e0f21e88.gif" width="300">
+
+[Visit the Live Project Here](http://www.ernestleung14.com)
 
 This is my personal portfolio website, a project that showcases my skills, experience, and projects. I built this responsive website using Next.js and Tailwind CSS for the frontend.
 
