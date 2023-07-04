@@ -42,7 +42,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions, feel free to reach out to me at `your-email@gmail.com`.
+If you have any questions, feel free to reach out to me at `ernestleung14@gmail.com`.
 
 ## Acknowledgements
 
