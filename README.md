@@ -1,14 +1,16 @@
-# Portfolio Website
+# Ernest's Portfolio Website V1
 
 ## Introduction
 
-This is my personal portfolio website, a project that showcases my skills, experience, and projects. I built this website using Next.js and Tailwind CSS for the frontend, and Node.js for the backend.
+![My Project Screenshot](/public/homeScreenshot.png)
+
+This is my personal portfolio website, a project that showcases my skills, experience, and projects. I built this responsive website using Next.js and Tailwind CSS for the frontend.
 
 ## Features
 
 The website includes the following pages and features:
 
--   **Home**: A brief introduction about me.
+-   **Hero**: A brief introduction about me.
 -   **About**: Detailed information about my skills, experiences, and educational background.
 -   **Projects**: A showcase of my projects, including a brief description, technologies used, and links to live demos and source code.
 -   **Contact**: A contact form where visitors can send me a message.
