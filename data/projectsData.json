@@ -1,5 +1,22 @@
 [
 	{
+		"name": "GhostWriter AI",
+		"features": [
+			{
+				"name": "GhostWriter AI",
+				"description": [
+					"Space Finder is a secure online platform for photo storage, organization, and sharing. It simplifies photo management with features like uploading, geotagging, and album curation. Ideal for individuals, families, photographers, and travelers, it combines user-friendliness with robust sharing capabilities for digital memory preservation.",
+					"Additionally, Space Finder offers flexibility in deployment, allowing users to establish their own AWS instance, personalize it with a domain, and create a user pool for enhanced control. It's a go-to solution for reliable, customized digital photo management."
+				],
+				"githubURL": "https://github.com/ErnestLeung52/ghostwriter-ai",
+				"hostURL": "",
+				"techStack": [],
+				"imageSrc": "/projectScreenshot/ghostWriterAI.png",
+				"imageAlt": "ghostWriterAI"
+			}
+		]
+	},
+	{
 		"name": "Space Finder",
 		"features": [
 			{
